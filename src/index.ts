@@ -37,10 +37,28 @@ const jugador3: Jugador = {
     position: { linea: "delantero", rol: "ser el mejor del mundo" }
 }
 
-// Logica de negocio: Agreguen otros dos objetos y recorranlos todos.
+const jugador4: Jugador = {
+    nombre: "Cristiano Ronaldo",
+    club: "Manchester United",
+    dorsal: 7,
+    activo: true,
+    position: { linea: "delantero", rol: "anotar goles" }
+}
 
-const jugadores: Jugador[] = [jugador1, jugador2, jugador3];
+const jugador5: Jugador = {
+    nombre: "Messi",
+    club: "Inter Miami",
+    dorsal: 10,
+    activo: true,
+    position: { linea: "delantero", rol: "crear juego" }
+}
+
+// Logica de negocio: Agreguen otros dos objetos y recórranlos todos.
+
+const jugadores: Jugador[] = [jugador1, jugador2, jugador3, jugador4, jugador5];
 
 for (const j of jugadores) {
-    // Implementar recorrido aqui
+    console.log(`${j.nombre} (${j.dorsal}) - ${j.club}`);
+    console.log(`  Posición: ${j.position.linea} | Rol: ${j.position.rol}`);
+    console.log(`  Estado: ${j.activo ? "Activo" : "Inactivo"}\n`);
 }
